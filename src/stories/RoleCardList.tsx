@@ -4,7 +4,9 @@ import RoleCard from './RoleCard';
 
 interface RoleCardListProps {
   roles: RoleProps[],
-  platform: 'desktop' | 'mobile';
+  platform: 'desktop' | 'mobile',
+  backgroundColor:string,
+  hoverColor:string
 }
 
 
@@ -15,7 +17,7 @@ const RoleCardList = ({...props}:RoleCardListProps) => {
       >
        {props.roles.map((role, index) => (
       <React.Fragment key={role.id}>
-        <RoleCard {...role} />
+        <RoleCard {...role} backgroundColor={props.backgroundColor} hoverColor={props.hoverColor}/>
         {index !== props.roles.length - 1 && <div className="w-0.5 bg-[white] relative top-[-12%] h-[128%] mx-8 " />}
       </React.Fragment>
     ))}

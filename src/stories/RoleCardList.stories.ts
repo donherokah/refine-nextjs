@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import RoleCardList from './RoleCardList';
 import { ROLES } from '@constants';
-import { fn } from '@storybook/test';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof RoleCardList> = {
@@ -17,6 +16,10 @@ const meta: Meta<typeof RoleCardList> = {
     },
     
   },
+  argTypes: {
+    backgroundColor: { control: 'color' },
+    hoverColor: { control: 'color' },
+  },
   tags: ['autodocs']
 } satisfies Meta<typeof RoleCardList>;
 
@@ -24,7 +27,7 @@ export default meta;
 type Story = StoryObj<typeof RoleCardList>;
 
 export const DesktopCardList: Story = {
-  args: {roles: ROLES, platform: 'desktop'},
+  args: {roles: ROLES, platform: 'desktop',backgroundColor:"#002351",hoverColor:'#FE8B4C'},
 };
 export const MobileCardList: Story = {
   args: {roles: ROLES, platform: 'mobile'},
