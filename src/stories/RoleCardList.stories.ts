@@ -23,6 +23,9 @@ const meta: Meta<typeof RoleCardList> = {
 export default meta;
 type Story = StoryObj<typeof RoleCardList>;
 
-export const PrimaryCardList: Story = {
+export const DesktopCardList: Story = {
   args: {roles: ROLES, platform: 'desktop'},
+};
+export const MobileCardList: Story = {
+  args: {roles: ROLES, platform: 'mobile'},
 };
