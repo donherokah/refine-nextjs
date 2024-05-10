@@ -22,4 +22,5 @@ export const ROLES:RoleProps[] = [{
     id:2,
     banner:experienced.src,
     title:'Experienced',
-}];
+},
+];
