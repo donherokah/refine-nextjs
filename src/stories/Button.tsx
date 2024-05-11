@@ -1,20 +1,21 @@
 import React from 'react';
-import { RoleProps } from '@constants';
-import RoleCard from './RoleCard';
 
-interface RoleCardListProps {
-  roles: RoleProps[],
-  platform: 'desktop' | 'mobile';
+
+export interface Buttonitems {
+  title : string;
+  onClick?: () => void;
+
 }
 
 
-const Button = ({...props}:RoleCardListProps) => {
+const Button = ({...props}:Buttonitems) => {
   return (
     <button 
-    // disabled
-    className={`border-primary border rounded-md inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-primary hover:bg-blue-light-5 hover:text-body-color dark:hover:text-dark-3 disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5 active:bg-blue-light-3`}>
-      Button
-    </button>
+      className='w-full bg-[#0A3773] border-primary border rounded-md inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-white hover:bg-[#1B44C8] hover:border-[#1B44C8] disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5 active:bg-[#1B44C8] active:border-[#1B44C8]'
+      onClick={props.onClick}
+      >
+    {props.title}
+  </button>
   )
 }
 

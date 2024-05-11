@@ -4,8 +4,8 @@ import { Suspense } from "react";
 
 import { WelcomePage } from "@refinedev/core";
 import './global.css';
-import RoleCardList from "@stories/RoleCardList";
-import { ROLES } from "@constants";
+
+import Popup from "@stories/Popup";
 
 export default function IndexPage() {
   return (
@@ -13,9 +13,9 @@ export default function IndexPage() {
     //   <div className="text-[red] bg-[blue] text-center">red</div>
     //   {/* <WelcomePage /> */}
     // </Suspense>
-    <RoleCardList
-  platform="desktop"
-  roles={ROLES}
-/>
+    <div>
+      <Popup title={"asdf"} buttonTitle={"press me"} id={1} />
+    </div>
+
   );
 }

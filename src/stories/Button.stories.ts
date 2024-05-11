@@ -9,15 +9,14 @@ const meta: Meta<typeof Button> = {
   parameters : {
     layout: 'centered', 
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
+  args: { onClick: fn() },
+
 } satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const DesktopCardList: Story = {
-  args: {roles: ROLES, platform: 'desktop'},
-};
-export const MobileCardList: Story = {
-  args: {roles: ROLES, platform: 'mobile'},
+export const Basic: Story = {
+  args: {title:'button'}
 };

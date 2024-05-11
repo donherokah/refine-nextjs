@@ -1,0 +1,43 @@
+import React, { useState } from "react";
+import PopupContent from "./PopupContent";
+import Buttonitems from './Button';
+import { ExperiencedProps } from "@constants/experienced";
+import Image from 'next/image';
+
+
+
+const ExperiencedCard = (props: ExperiencedProps) => {
+
+  return (
+    <div className="cursor-pointer" onClick={props.onClick}>
+      <div className="main">
+       <Image 
+          src={props.banner} 
+          width={100} 
+          height={100} 
+          alt={'role image'} 
+          className={`cursor-pointer`}
+         />
+      </div>
+      <h3 className={`title text-[${props.color}]`}>{props.title}</h3>
+      <style jsx>{`
+        .main{
+            background-color: ${props.color};
+            box-shadow: 0px 4px 15px 0px ${props.color};
+            text-align: center;
+            padding: 1rem 1rem 0rem 1rem;
+        }
+        .title{
+          color: ${props.color};
+          font-weight: 600;
+          text-align: center;
+          padding: 1rem 1rem 0rem 1rem;
+          font-size: 20px;
+        }
+      `}</style>
+
+    </div>
+  );
+};
+
+export default ExperiencedCard;
