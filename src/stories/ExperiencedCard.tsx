@@ -26,6 +26,7 @@ const ExperiencedCard = (props: ExperiencedProps) => {
             box-shadow: 0px 4px 15px 0px ${props.color};
             text-align: center;
             padding: 1rem 1rem 0rem 1rem;
+            border-radius: 1rem;
         }
         .title{
           color: ${props.color};
