@@ -16,7 +16,7 @@ const ExperiencedCard = (props: ExperiencedProps) => {
           width={100} 
           height={100} 
           alt={'role image'} 
-          className={`cursor-pointer`}
+          className={`cursor-pointer h-[7rem]`}
          />
       </div>
       <h3 className={`title text-[${props.color}]`}>{props.title}</h3>
