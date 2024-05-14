@@ -42,12 +42,12 @@ const PopupContent = ({slide = 'down' ,modalOpen,handleClose,...props}:PopupCont
 
   return (
           <Dialog
-        open={modalOpen}
-        TransitionComponent={Transition}
-        keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-      >
+            open={modalOpen}
+            TransitionComponent={Transition}
+            keepMounted
+            onClose={handleClose}
+            aria-describedby="alert-dialog-slide-description"
+          >
         <DialogTitle>
           <div className="flex gap-2">
             <button onClick={handleClose}>

@@ -29,7 +29,8 @@ export const Basic: Story = {
     id: 1,
     title: 'label',
     children: '',
-  
+      buttonFunction:()=> console.log('button pressed'),
+
     buttonTitle:'click me'
   },
 };
