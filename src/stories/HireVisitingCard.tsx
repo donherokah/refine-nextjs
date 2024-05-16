@@ -67,10 +67,10 @@ const HireVisitingCard = ({...props}: HireVisitingCardProps) => {
               padding:'4%',
               paddingLeft:'5.9%'
             }}
-            className={`  text-white relative `}
+            className={` text-white relative `}
           >
-           <div className='grid gap-12 '>
-            <div className='gap-[3%] grid pt-8'>
+           <div className='grid gap-12 h-full grid-rows-[50%_50%] '>
+            <div className=' pt-[13%]'>
               <h1 className="text-[120%] font-extrabold">{props.companyName}</h1>
               <h3>{props.contactPersonName}</h3>
               <h3>{'Nature of Business: '+props.natureOfBusiness}</h3>
