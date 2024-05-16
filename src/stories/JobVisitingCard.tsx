@@ -89,7 +89,7 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
                 <div className="grid justify-items-center items-center pt-[15.5%]">
                   <img
                     style={{borderColor:props.themeColor}}
-                    className=" absolute left-[57.5%] top-[23%] h-[36.5vh] mt-12% w-[23.5vw]  rounded-[50%]  border-solid left-[52.7%] top-[29%]"
+                    className=" absolute left-[57.5%] top-[23%] h-[36.5vh] mt-12% w-[23.5vw]  rounded-[50%]  border-solid left-[52.7%] "
                     src={props.imageURL}
                     alt="hello image"
                     width={500}
