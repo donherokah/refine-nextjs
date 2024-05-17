@@ -8,7 +8,6 @@ import { useMediaQuery } from '@mui/material';
 export interface BottomSheetProps {
   label: string;
   buttonTitle: string;
-  title: string;
   buttonFunction?: () => void;
   closeOnBackdropClick: boolean;
   children?: ReactNode
@@ -50,7 +49,7 @@ const BottomSheet = ({children,...props}:BottomSheetProps) => {
 
   return (
     <>
-    <button onClick={() => setOpen(true)}>{props.title}</button>
+    <button onClick={() => setOpen(true)}>open bottom sheet</button>
 
     <Sheet isOpen={isOpen} onClose={handleClose}  detent="content-height"  >
       <Sheet.Container style={{ maxWidth: isMobile ? '100%' : '40%', left: isMobile ? '' : '33%' }}>

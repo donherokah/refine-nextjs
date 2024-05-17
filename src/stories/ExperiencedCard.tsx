@@ -9,8 +9,8 @@ import Image from 'next/image';
 const ExperiencedCard = (props: ExperiencedProps) => {
 
   return (
-    <div className="cursor-pointer" onClick={props.onClick}>
-      <div className="main">
+    <div className="cursor-pointer grid justify-items-center" onClick={props.onClick}>
+      <div className="main w-max">
        <Image 
           src={props.banner} 
           width={100} 

@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import BottomSheet from './BottomSheet';
 import { fn } from '@storybook/test';
 
+
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof BottomSheet> = {
   component: BottomSheet,
@@ -21,8 +22,8 @@ export const Basic: Story = {
     label:'label',
     buttonTitle:'speedster',
     buttonFunction:()=> console.log('button pressed'),
-    title:'add spend',
     closeOnBackdropClick:true, 
+    children:'Child Element Here...',
+  },
 
-  }
 };
