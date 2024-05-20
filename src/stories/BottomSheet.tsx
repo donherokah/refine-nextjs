@@ -60,7 +60,7 @@ const BottomSheet = ({children,...props}:BottomSheetProps) => {
               <button onClick={handleClose}>
                 <KeyboardBackspaceIcon  />
               </button>
-              <h3>{props.label}</h3>
+              <h3 className='font-semibold text-[26px]'>{props.label}</h3>
             </div>
             {children}
             <Button title={props.buttonTitle} onClick={handleButtonFunction}  />
