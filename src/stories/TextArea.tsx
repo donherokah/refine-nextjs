@@ -31,6 +31,7 @@ const TextArea: React.FC<TextAreaProps> = ({ label, helperText, disabled, placeh
         {label}
       </label>
       <textarea
+        rows={5}
         disabled={disabled}
         placeholder={placeholder}
         value={currentValue}
