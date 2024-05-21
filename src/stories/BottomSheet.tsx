@@ -63,7 +63,7 @@ const BottomSheet = ({children,...props}:BottomSheetProps) => {
               <h3 className='font-semibold text-[26px]'>{props.label}</h3>
             </div>
             {children}
-            <Button title={props.buttonTitle} onClick={handleButtonFunction}  />
+            <Button text={props.buttonTitle} onClick={handleButtonFunction}  />
           </div>
         </Sheet.Content>
       </Sheet.Container>

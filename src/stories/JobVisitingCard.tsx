@@ -55,7 +55,9 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
 
   return (
     <div>
-        <div style={{height:'70vh',width:'73vw'}}>
+        <div 
+          // style={{height:'70vh',width:'73vw'}}
+          >
           <div
             style={{
               backgroundImage: `url(${bgImage})` ,
@@ -69,19 +71,19 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
             }}
             className={`  text-white relative `}
           >
-            <div className="grid grid-cols-[1fr_1fr] h-[78%] items-center pt-[4%]">
-                <div className=' grid grid-rows-[41%_27%_28%] pt-[2%] text-end text-[75%] relative left-[9%] h-full'>
-                  <div className="pr-[6%]">
-                    <h1 className="text-[1.3rem] font-extrabold">{props.name}</h1>
-                    <span className=" flex justify-end"><p>{props.experience}</p>,<p>{props.position}</p></span>
-                    <p>{props.department}</p>
+            <div className="grid grid-cols-[1fr_1fr] h-[78%] items-center ">
+                <div className=' grid  text-end text-[100%] relative left-[9%] h-full'>
+                  <div className="">
+                    <h1 className="text-[100%] font-extrabold">{props.name}</h1>
+                    <span className=" flex justify-end text-[75%] "><p>{props.experience}</p>,<p>{props.position}</p></span>
+                    <p className="text-[60%] pr-4">{props.department}</p>
                   </div>
-                  <h3 className="pr-[18%] pt-[3%]">{props.currentLocation}</h3>
-                  <div className="pr-[16%] pt-[4%]">
+                  <h3 className="pr-[18%] pt-[3%]  text-[75%]">{props.currentLocation}</h3>
+                  <div className="pr-[16%] pt-[4%]  text-[75%]">
                     <h3 className="pl-[17%]">{props.mobileNumber}</h3>
                     <h3 className="pl-[16%]">{props.email}</h3>
                   </div>
-                  <div>
+                  <div className=" text-[75%]">
                     <h3 className="pl-[12%]">{props.preferredLocationOne}</h3>
                     <h3>{props.preferredLocationTwo}</h3>
                   </div>
@@ -89,7 +91,7 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
                 <div className="grid justify-items-center items-center pt-[15.5%]">
                   <img
                     style={{borderColor:props.themeColor}}
-                    className=" absolute left-[57.5%] top-[23%] h-[36.5vh] mt-12% w-[23.5vw]  rounded-[50%]  border-solid left-[52.7%] "
+                    className=" absolute left-[57.5%] top-[23%] h-[53%] mt-12% w-[32.3%]  rounded-[50%]  border-solid left-[52.7%] "
                     src={props.imageURL}
                     alt="hello image"
                     width={500}
