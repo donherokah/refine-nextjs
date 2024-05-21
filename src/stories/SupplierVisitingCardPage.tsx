@@ -24,7 +24,7 @@ export interface BottomSheetProps {
   children?: ReactNode
 }
 
-const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
+const SupplierVisitingCardPage = ({children,...props}:BottomSheetProps) => {
 
   const [isOpen, setOpen] = useState(false);
 
@@ -250,4 +250,4 @@ const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
   );
 };
 
-export default HireVisitingCardPage;
+export default SupplierVisitingCardPage;
