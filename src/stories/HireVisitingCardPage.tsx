@@ -12,6 +12,7 @@ import RoundButton from './RoundButton';
 
 import Image from 'next/image';
 import Topbar from './Topbar';
+import HireVisitingCard from './HireVisitingCard';
 
 
 
@@ -165,7 +166,18 @@ const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
 
         <div className={`${isMobile && 'w-full'}`}>
           <div className={`h-[22rem] ${isMobile ? 'w-full':'w-[40rem]'}`}>
-            <SupplierVisitingCard {...supplierVisitingData} />
+          <HireVisitingCard
+            address="Anywhere St., Any City, ST 12345"
+            brandName="Brand Name"
+            companyName="Company Name"
+            contactPersonName="Contact Person Name"
+            email="ceo@email.com"
+            imageURL="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-3.jpg"
+            mobileNumber="+91 9900653064"
+            natureOfBusiness="Nature of Business"
+            themeColor="blue"
+            website="www.horecah.com"
+          />
           </div>
          
         </div>

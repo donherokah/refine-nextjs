@@ -55,7 +55,7 @@ const HireVisitingCard = ({...props}: HireVisitingCardProps) => {
 
   return (
     <div>
-        <div style={{height:'70vh',width:'73vw'}}>
+        <div>
           <div
             style={{
               backgroundImage: `url(${bgImage})` ,
@@ -70,7 +70,7 @@ const HireVisitingCard = ({...props}: HireVisitingCardProps) => {
             className={` text-white relative `}
           >
            <div className='grid gap-12 h-full grid-rows-[50%_50%] '>
-            <div className=' pt-[13%]'>
+            <div className=''>
               <h1 className="text-[120%] font-extrabold">{props.companyName}</h1>
               <h3>{props.contactPersonName}</h3>
               <h3>{'Nature of Business: '+props.natureOfBusiness}</h3>
