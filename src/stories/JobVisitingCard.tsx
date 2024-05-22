@@ -76,7 +76,7 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
                 <div className=' grid  text-end text-[100%]  left-[9%] h-full pt-[10%] '>
                   <div className="">
                     <h1 className="text-[100%] font-extrabold">{props.name}</h1>
-                    <span className=" flex justify-end text-[75%] "><p>{props.experience}</p>,<p>{props.position}</p></span>
+                    <div className=" flex justify-end text-[75%] "><p>{props.experience}</p>,<p>{props.position}</p></div>
                     <p className="text-[60%] pr-4">{props.department}</p>
                   </div>
                   <h3 className="pr-[18%] pt-[3%]  text-[75%]">{props.currentLocation}</h3>

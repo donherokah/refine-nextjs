@@ -117,18 +117,7 @@ const ExperiencedVisitingCardPage = ({children,...props}:BottomSheetProps) => {
     logo: SecondaryLogo
   }
 
-  const supplierVisitingData = {
-    address:"Anywhere St., Any City, ST 12345",
-    brandName:"Brand Name",
-    companyName:"Company Name",
-    contactPersonName:"Contact Person Name",
-    email:"ceo@email.com",
-    imageURL:"https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-3.jpg",
-    mobileNumber:"+91 9900653064",
-    natureOfBusiness:"Nature of Business",
-    themeColor:"blue",
-    website:"www.horecah.com"
-  }
+
 
   const jobData = {
     currentLocation: "current Locaion",
@@ -153,16 +142,16 @@ const ExperiencedVisitingCardPage = ({children,...props}:BottomSheetProps) => {
    <div className='h-screen w-screen'>
     {isMobile ?
         <Topbar
-      backgroundColor="#113B73"
-      button={Back}
-      color="white"
-      label="Label"
-      logo={PrimaryLogo}
-      onBack={() => {}}
-      platform=""
-      progress="30%"
-    />:
-    <DesktopNavbar {...desktopNavbarData} />}
+          backgroundColor="#113B73"
+          button={Back}
+          color="white"
+          label="Label"
+          logo={PrimaryLogo}
+          onBack={() => {}}
+          platform=""
+          progress="30%"
+        />:
+        <DesktopNavbar {...desktopNavbarData} />}
 
     <div className={`grid ${!isMobile && 'grid-cols-[7fr_7fr]'} gap-4 p-4`}>
       <div className='grid gap-4 grid-rows-[max-content_max-content] pt-16'>
