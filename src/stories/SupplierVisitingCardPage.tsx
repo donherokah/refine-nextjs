@@ -5,7 +5,7 @@ import Button from './Button';
 import { useMediaQuery } from '@mui/material';
 import { DesktopNavbar } from './DesktopNavbar';
 
-import { Back, Download, Edit, EyeIcon, GST, Pan, PrimaryLogo, SecondaryLogo, Share } from './assets/icons';
+import { Back, Download, Edit, EyeIcon, GST, Pan, PrimaryLogo, SecondaryLogo, OrangeShare } from './assets/icons';
 import SupplierVisitingCard from './SupplierVisitingCard';
 import JobVisitingCard from './JobVisitingCard';
 import RoundButton from './RoundButton';
@@ -181,7 +181,7 @@ const SupplierVisitingCardPage = ({children,...props}:BottomSheetProps) => {
               backgroundColor="white"
           border="1px solid #F3F4F6"
           color="black"
-          icon={Share}
+          icon={OrangeShare}
               onClick={() => {}}
             />
               <RoundButton

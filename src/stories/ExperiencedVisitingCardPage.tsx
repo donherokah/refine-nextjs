@@ -12,7 +12,11 @@ import RoundButton from './RoundButton';
 
 import Image from 'next/image';
 import Topbar from './Topbar';
-import HireVisitingCard from './HireVisitingCard';
+
+import { Share } from '@mui/icons-material'
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import company from './assets/company.png'
+
 
 
 
@@ -25,7 +29,7 @@ export interface BottomSheetProps {
   children?: ReactNode
 }
 
-const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
+const ExperiencedVisitingCardPage = ({children,...props}:BottomSheetProps) => {
 
   const [isOpen, setOpen] = useState(false);
 
@@ -166,18 +170,8 @@ const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
 
         <div className={`${isMobile && 'w-full'}`}>
           <div className={`h-[22rem] ${isMobile ? 'w-full':'w-[40rem]'}`}>
-          <HireVisitingCard
-            address="Anywhere St., Any City, ST 12345"
-            brandName="Brand Name"
-            companyName="Company Name"
-            contactPersonName="Contact Person Name"
-            email="ceo@email.com"
-            imageURL="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-3.jpg"
-            mobileNumber="+91 9900653064"
-            natureOfBusiness="Nature of Business"
-            themeColor="blue"
-            website="www.horecah.com"
-          />
+            {/* <SupplierVisitingCard {...supplierVisitingData} /> */}
+            <JobVisitingCard {...jobData} />
           </div>
          
         </div>
@@ -248,11 +242,42 @@ const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
           />
       </div>
       </div>
-      {!isMobile && <div className=''>
-        <h1 className='text-[2rem] font-bold'>Recommended</h1>
-        <div className=' w-[20rem] pt-8 grid gap-4'>
+      {!isMobile && <div className='pl-12'>
+        <h1 className='text-[2rem] font-bold'>Recommended Job</h1>
+        <div className=' w-[30rem] pt-8 grid gap-4'>
           {
-            jobDatas.map((data)=> <JobVisitingCard {...data} />)
+            jobDatas.map((data)=> 
+              <div className='flex gap-2 mb-4 rounded-md drop-shadow-md justify-between p-4'>
+            <div className='flex'>
+                <Image src={company} style={{ width: 'auto', height: 'auto' }} alt="image" />
+                <div className='px-4 '>
+                    <h2 className='text-lg'>Executive Chef</h2>
+                    <p className='opacity-50 text-xs'>Indian Bier House</p>
+                    <span>
+                        <p  className='text-sm'>Bangalore</p>
+                    </span>
+                    <p className='opacity-50 text-xs'>Full time</p>
+                    <p className='opacity-50 text-xs'>₹ 70000-130000/M</p>
+                </div>
+            </div>
+            <div className=''>
+                <div  className='opacity-20 text-right'>
+                    <Share />
+                    <BookmarkBorderIcon />
+                </div>
+                <div  className='mx-6'>
+                    <button className='rounded-md px-4 py-2 text-slate-800 text-lg text-blue-900 text-center'>
+                        View
+                    </button>
+                    <button
+                        className='w-full h-[2.7rem] pl-4 rounded-[0.45rem] my-2 bg-[#002351] text-white font-bold opacity-100 p-2 text-md'
+                    >Apply
+                    </button>
+                </div>
+            </div>
+        </div>
+            )
+
           }
         </div>
       </div>}
@@ -262,4 +287,4 @@ const HireVisitingCardPage = ({children,...props}:BottomSheetProps) => {
   );
 };
 
-export default HireVisitingCardPage;
+export default ExperiencedVisitingCardPage;

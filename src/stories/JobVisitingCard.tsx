@@ -54,9 +54,10 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
 
 
   return (
-    <div>
+    <div className="h-full">
         <div 
           // style={{height:'70vh',width:'73vw'}}
+          className="h-full"
           >
           <div
             style={{
@@ -71,8 +72,8 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
             }}
             className={`  text-white relative `}
           >
-            <div className="grid grid-cols-[1fr_1fr] h-[78%] items-center ">
-                <div className=' grid  text-end text-[100%] relative left-[9%] h-full'>
+            <div className="grid justify-center h-full grid-cols-[1fr_1fr] h-[78%] items-center ">
+                <div className=' grid  text-end text-[100%]  left-[9%] h-full pt-[10%] '>
                   <div className="">
                     <h1 className="text-[100%] font-extrabold">{props.name}</h1>
                     <span className=" flex justify-end text-[75%] "><p>{props.experience}</p>,<p>{props.position}</p></span>
@@ -88,10 +89,10 @@ const JobVisitingCard = ({...props}: JobVisitingCardProps) => {
                     <h3>{props.preferredLocationTwo}</h3>
                   </div>
                 </div>
-                <div className="grid justify-items-center items-center pt-[15.5%]">
+                <div className="grid justify-items-center items-center h-full">
                   <img
                     style={{borderColor:props.themeColor}}
-                    className=" absolute left-[57.5%] top-[23%] h-[53%] mt-12% w-[32.3%]  rounded-[50%]  border-solid left-[52.7%] "
+                    className=" left-[57.5%] top-[23%] mt-12% w-[72%] h-[65%]  rounded-[50%]  border-solid left-[52.7%] "
                     src={props.imageURL}
                     alt="hello image"
                     width={500}
